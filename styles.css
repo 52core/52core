@@ -1,0 +1,91 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body takes up the full viewport height */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: 1fr 1fr 1fr; /* Three equal rows */
+    gap: 10px;
+    height: 100vh; /* Full viewport height */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Sections */
+.video-list, .explanation, .selected-video, .blog-text, .about, .donation {
+    background-color: #e2e2e2;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: auto; /* Add scrollbars inside sections if content overflows */
+}
+
+/* Row 1 */
+.video-list {
+    grid-column: 1 / 2; /* First column */
+    grid-row: 1 / 2; /* First row */
+}
+
+.explanation {
+    grid-column: 2 / 3; /* Second column */
+    grid-row: 1 / 2; /* First row */
+}
+
+/* Row 2 */
+.selected-video {
+    grid-column: 1 / 2; /* First column */
+    grid-row: 2 / 3; /* Second row */
+}
+
+.blog-text {
+    grid-column: 2 / 3; /* Second column */
+    grid-row: 2 / 3; /* Second row */
+}
+
+/* Row 3 */
+.about {
+    grid-column: 1 / 2; /* First column */
+    grid-row: 3 / 4; /* Third row */
+}
+
+.donation {
+    grid-column: 2 / 3; /* Second column */
+    grid-row: 3 / 4; /* Third row */
+}
+
+/* Video Player */
+video {
+    width: 100%;
+    height: auto;
+    max-height: 100%; /* Ensure video doesn't overflow */
+    border-radius: 5px;
+}
+
+/* Donation Button */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
